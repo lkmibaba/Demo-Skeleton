@@ -100,8 +100,7 @@
     font-size:13px;color:#cfd8ea;user-select:none;transition:.14s;
   }
   .tg-h:hover{background:var(--panel-2)}
-  /* 折叠/展开图标：收起 ›、展开 ▾，形态由 ::before 切换，.cw 元素留空
-     两处共用：① 架构树组头 .tg-h ② 变更记录 .lg-h */
+  /* 折叠/展开图标：收起 ›、展开 ▾，形态由 ::before 切换，.cw 元素留空 两处共用：① 架构树组头 .tg-h ② 变更记录 .lg-h */
   .cw{display:inline-flex;align-items:center;justify-content:center;width:11px;flex-shrink:0;line-height:1}
   .cw::before{content:"\203a";font-size:14px;line-height:1}
   .tg:not(.closed) .tg-h .cw::before,
@@ -231,7 +230,7 @@
   }
   .fld-err.show{display:block}
 
-  /* ============ 登录页（Web） ============ */
+  /* ============ 登录页 ============ */
   .wb{display:flex;width:100%;height:100%}
   .wb-left{
     width:800px;flex-shrink:0;position:relative;overflow:hidden;
@@ -356,25 +355,11 @@
                     <path d="M24 15 L33 20.4 v10.8 L24 36.6 L15 31.2 V20.4 Z" stroke-opacity=".55"/>
                   </svg>
                 </div>
-                <div class="wb-brand">示例系统</div>
-                <p class="wb-desc">一体化业务管理平台<br>Web 端原型框架 · 一屏容纳架构树、画布与需求面板</p>
-                <ul class="wb-feats">
-                  <li>
-                    <span class="fi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-                    <span>画布固定 1440×900 设计基准，视口变化时整板等比缩放</span>
-                  </li>
-                  <li>
-                    <span class="fi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span>
-                    <span>左栏合并为单区，面板 / 变更 / 架构树三标签切换</span>
-                  </li>
-                  <li>
-                    <span class="fi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 12h10M4 19h13"/></svg></span>
-                    <span>页面口径与规则集中在 PAGE_META，一处维护处处生效</span>
-                  </li>
-                </ul>
+                <div class="wb-brand">后台管理系统框架</div>
+                <p class="wb-desc">一体化业务管理平台</p>
               </div>
 
-              <div class="wb-copy">© 2026 示例系统 · 保留所有权利</div>
+              <div class="wb-copy">© 2026 保留所有权利</div>
             </div>
 
             <div class="wb-right">
@@ -384,13 +369,13 @@
 
                 <div class="fld">
                   <label class="fld-l" for="acc">账号</label>
-                  <input class="fld-i" id="acc" type="text" autocomplete="off" placeholder="手机号 / 邮箱 / 员工工号">
+                  <input class="fld-i" id="acc" type="text" autocomplete="off" placeholder="手机号 / 邮箱 / 员工工号" value="admin">
                 </div>
 
                 <div class="fld">
                   <label class="fld-l" for="pwd">密码</label>
                   <div class="fld-p">
-                    <input class="fld-i" id="pwd" type="password" autocomplete="off" placeholder="请输入登录密码">
+                    <input class="fld-i" id="pwd" type="password" autocomplete="off" placeholder="请输入登录密码" value="123456">
                     <button class="eye" id="eyeBtn" type="button" aria-label="显示密码" onclick="togglePwd()">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M2 12s3.8-6.5 10-6.5S22 12 22 12s-3.8 6.5-10 6.5S2 12 2 12Z"/>
@@ -413,7 +398,7 @@
                 </div>
 
                 <div class="wb-agree">
-                  <label class="chk"><input type="checkbox" id="agree"><i class="box"></i>我已阅读并同意</label>
+                  <label class="chk"><input type="checkbox" id="agree" checked><i class="box"></i>我已阅读并同意</label>
                   <button class="lnk" type="button" onclick="demo('服务协议')">《服务协议》</button>
                   <span>与</span>
                   <button class="lnk" type="button" onclick="demo('隐私政策')">《隐私政策》</button>
