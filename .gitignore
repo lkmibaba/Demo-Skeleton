@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+
+# WorkBuddy 会话与项目记忆（不入库）
+.workbuddy/
+
+# 本地备份 / 快照（不入库）
+*.bak
+*.bak-*
+.backup/
+_backup/
+snapshot/
+snapshots/
+
+# 探针与截图产物（不入库）
+probe*.js
+check*.py
+shot_*.png
+v2_*.png
+v3_*.png
+
+# 运行时垃圾
+__pycache__/
+*.pyc
+node_modules/
